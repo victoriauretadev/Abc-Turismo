@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+/* VARIABLES */
+
+:root {
+  /* Nav */
+
+  --button-nav: #29d9d5;
+  --nav-logo: #ffffff;
+  --header-nav: #222222;
+  --nav-link-a: #d9d9d9;
+}
+
+/* HEADER */
+
+header {
+  background-color: var(--header-nav);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  height: 65px;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  gap: 250px;
+}
+
+.navbar-list {
+  gap: 30px;
+}
+
+.navbar-list a {
+  color: var(--nav-link-a);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.navbar-list .active {
+  font-weight: 600;
+}
+
+.abc-turismo {
+  color: var(--nav-logo);
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin: 0px 220px 0px 0px;
+}
+
+.book-now {
+  background-color: transparent;
+  border-color: var(--button-nav);
+  border-radius: 50px;
+  color: var(--nav-link-a);
+  padding: 7px 20px;
+}
